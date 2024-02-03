@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-AJB15B8.BOfA_customer"
+  DTS:DTSID="{2D59DD06-9D01-45AE-8291-A8E41C9240AC}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">"Data Source=" + @[$Project::ServerName] + ";Initial Catalog=" + @[$Project::DatabaseName] + ";Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{8D3897FD-AC6D-4B72-9618-9D4DB438D77B}" + @[$Project::ServerName] +"_" + @[$Project::DatabaseName] + " 1;Auto Translate=False;"</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-AJB15B8;Initial Catalog=BOfA_customer;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{8D3897FD-AC6D-4B72-9618-9D4DB438D77B}DESKTOP-AJB15B8_BOfA_customer 1;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
